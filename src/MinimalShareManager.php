@@ -192,7 +192,7 @@ class MinimalShareManager {
    *   The machine-readable string.
    */
   public function getMachineName($str) {
-    return Unicode::strtolower(Html::cleanCssIdentifier($str));
+    return mb_strtolower(Html::cleanCssIdentifier($str));
   }
 
   /**
